@@ -28,7 +28,7 @@ public class ExplictwaitExample {
 			we.sendKeys("n.swathi509");
 			driver.findElement(By.id("identifierNext")).click();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+			System.out.println("Hello Suresh");
 			WebDriverWait wait = new WebDriverWait(driver, 10);
 			WebElement webElement = wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By
